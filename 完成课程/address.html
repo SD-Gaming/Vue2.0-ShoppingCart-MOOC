@@ -15,6 +15,9 @@
             padding: 5px 10px;
             text-align: center;
         }
+        [v-cloak]{
+        	display: none;
+        }
     </style>
 </head>
 <body>
@@ -44,7 +47,7 @@
       </defs>
     </svg>
 
-    <div class="container">
+    <div class="container" v-cloak>
       <div class="checkout-addr">
         <!-- process step -->
         <div class="check-step">
@@ -189,8 +192,7 @@
             </div>
           </div>
         </div>
-<!--         <div class="md-overlay" id="showOverLay"></div>
- -->
+
       </div>
     </div>
   </div>
